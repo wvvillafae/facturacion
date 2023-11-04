@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="js/compras.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Tecno</h1>
+    </header>
+    <form name="calculo">
+        <fieldset>
+            <legend>Facturacion</legend>
+            <label>Celular:</label>
+            <select name="Productos">
+                <option value="Iphone">Iphone</option>
+                <option value="Motorola">Motorola</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Vivo">Vivo</option>
+            </select><br>
+
+            <label>Cantidad</label><br>
+            <input type="text" size="8" id="Cantidad">
+            <br>
+            
+            <label>PRECIO:</label><br>
+            <input type="text" size="8" id="precio">
+            <br><br>
+
+            <button type="button" value="calcular" onclick=funcion_calcular()>calcular</button>
+        </fieldset>
+     </form>
+
+        <p>Total a pagar:</p>
+        <div><p id="compra" ></p></div>
+
+        <footer>
+            <h3>Diseñado por: Wendi Villafañe de ADSO3</h3>
+        </footer>
+</body>
+</html>
